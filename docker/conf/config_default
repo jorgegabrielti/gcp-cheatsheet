@@ -1,2 +1,2 @@
 [auth]
-credential_file_override = /root/.config/gcloud-admin.json
+credential_file_override = /root/.config/<SERVICE-ACCOUNT-FILE>.json
