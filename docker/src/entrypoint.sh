@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
 #case $1 in
@@ -10,4 +10,8 @@ set -e
 #  ;;
 #esac
 
-/usr/bin/gcloud "$@"
+if [ $# -eq 0 ]; then
+  /usr/bin/gcloud --version  
+else
+  /usr/bin/gcloud "$@"
+fi 
