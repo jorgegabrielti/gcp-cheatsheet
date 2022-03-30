@@ -3,7 +3,7 @@
 
 About
 ==========
-This project aims to consolidate knowledge in Google Cloud Platform with a focus on cli tools.
+This project aims to consolidate knowledge in Google Cloud Platform with a focus on cli tools. This is based in Docker.
 
 [//]: # "[![Badge]()]()"
 
@@ -21,21 +21,8 @@ Requirements
 ==========
 ### **[Install gcloud](https://cloud.google.com/sdk/docs/quickstart-linux)**
 ```bash
-curl -so gcloud-x86_64.tar.gz \
-      https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-309.0.0-linux-x86_64.tar.gz
-```
-
-```bash
-tar zxvf gcloud-x86_64.tar.gz -C ~/
-```
-
-```bash
-cd ~/google-cloud-sdk && ./install.sh
-cd -
-```
-```bash
-gcloud version
-```
-```bash
-rm -rf gcloud-x86_64.tar.gz
+docker run -it \
+  --volume ${PWD}/conf:/root/.config/gcloud/configurations \
+  --volume ${PWD}/service_account:/root/.config/ jorgegabriel/cloudsdk:latest \
+    gcloud compute instances list --project <PROJECT>
 ```
