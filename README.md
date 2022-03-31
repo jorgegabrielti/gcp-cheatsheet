@@ -12,6 +12,9 @@ Table of contents
 <!--ts-->
    * [About](#about)
    * [Table of contents](#table-of-contents)
+   * [Requirements](#requirements)
+   * [To install requirements](#to-install-requirements)
+   * [Install gcloud through Docker](#install-gcloud-through-docker)
 <!--te-->
 
 [//]: # "(## Feature)"
@@ -26,7 +29,7 @@ Requirements
 - [x] **Service Account key**
   
 
-## **Requirements**
+## **To install requirements**
 ---
 Requirement             | How to install
 -------------------------|----------------
