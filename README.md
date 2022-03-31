@@ -66,7 +66,8 @@ With the requirements met, let's run our container:
 
 ```bash
 docker run -it \
-  --volume ${PWD}/conf:/root/.config/gcloud/configurations \above --volume ${PWD}/service_account:/root/.config/ \
+  --volume ${PWD}/conf:/root/.config/gcloud/configurations \ 
+  --volume ${PWD}/service_account:/root/.config/ \
   jorgegabriel/google-cloud:slim \
   <GCLOUD PARAMETERS> --project <PROJECT-ID>
 ```
