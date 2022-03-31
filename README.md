@@ -19,7 +19,14 @@ Table of contents
 
 Requirements
 ==========
-### **[Install gcloud](https://cloud.google.com/sdk/docs/quickstart-linux)**
+- [x] **Git**
+- [x] **Docker**
+- [x] **Google Cloud Platform Account**
+- [x] **Service Account in GCP**
+- [x] **Service Account key**
+
+### **Install gcloud through Docker**
+
 ```bash
 docker run -it \
   --volume ${PWD}/conf:/root/.config/gcloud/configurations \
