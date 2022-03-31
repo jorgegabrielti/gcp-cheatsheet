@@ -39,13 +39,35 @@ Requirement             | How to install
 **Service account**      | [**here**](https://cloud.google.com/iam/docs/creating-managing-service-accounts#iam-service-accounts-create-console)
 **Service account key**  | [**here**](https://cloud.google.com/iam/docs/creating-managing-service-account-keys)
 
+### **Prepare the files structure**
+
+Make the directory to service account key:
+```bash
+mkdir -p ~/gcloud-docker/{conf,service_account}
+```
+
+Create the file **config_default** in **~/gcloud-docker/conf**
+```bash
+cat > ~/gcloud-docker/conf/config_default <<EOF
+[auth]
+credential_file_override = /root/.config/<SERVICE ACCOUNT>.json
+EOF
+```
+
+Copy the service account key file json to directory:
+```bash
+cp -v <SERVICE ACCOUNT>.json ~/gcloud-docker/conf/
+```
+
+
+
 ### **Install gcloud through Docker**
 With the requirements met, let's run our container:
 
 ```bash
 docker run -it \
-  --volume ${PWD}/conf:/root/.config/gcloud/configurations \
-  --volume ${PWD}/service_account:/root/.config/ jorgegabriel/cloudsdk:latest \
-    gcloud compute instances list --project <PROJECT>
+  --volume ${PWD}/conf:/root/.config/gcloud/configurations \above --volume ${PWD}/service_account:/root/.config/ \
+  jorgegabriel/google-cloud:slim \
+  <GCLOUD PARAMETERS> --project <PROJECT-ID>
 ```
 
