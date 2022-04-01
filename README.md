@@ -48,3 +48,10 @@ docker run -it --rm \
   jorgegabriel/google-cloud:slim init
 ```
 
+A tip to avoid the lengthy docker command is to create an alias in your **~/.bashrc**:
+```bash
+# Google Cloud
+alias gctl="docker run -it --rm \
+            --volume ${PWD}/.config/gcloud:/root/.config/gcloud \
+            jorgegabriel/google-cloud:slim"
+```
