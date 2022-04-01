@@ -1,16 +1,9 @@
 #!/bin/bash
 set -e
 
-#case $1 in
-#  "gcloud-install")
-#    
-#  ;;
-#  *)
-#    gcloud --version
-#  ;;
-#esac
-
+### Parameters validate
 if [ $# -eq 0 ]; then
+  # TODO: criar um help.
   /usr/bin/gcloud --version  
 else
   /usr/bin/gcloud "$@"
