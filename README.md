@@ -65,7 +65,7 @@ cp -v <SERVICE ACCOUNT>.json ~/gcloud-docker/conf/
 With the requirements met, let's run our container:
 
 ```bash
-docker run -it \
+docker run -it --rm \
   --volume ${PWD}/conf:/root/.config/gcloud/configurations \ 
   --volume ${PWD}/service_account:/root/.config/ \
   jorgegabriel/google-cloud:slim \
