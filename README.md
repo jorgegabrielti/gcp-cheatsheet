@@ -25,10 +25,6 @@ Requirements
 - [x] **Git**
 - [x] **Docker**
 - [x] **Google Cloud Platform Account**
-- [x] **Service Account in GCP**
-- [x] **Service Account key**
-  
-
 ## **To install requirements**
 ---
 Requirement             | How to install
@@ -36,39 +32,19 @@ Requirement             | How to install
 **Git**                  | [**here**](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 **Docker**               | [**here**](https://docs.docker.com/engine/install/)
 **Google Cloud Account** | [**here**](https://cloud.google.com/apigee/docs/hybrid/v1.4/precog-gcpaccount)
-**Service account**      | [**here**](https://cloud.google.com/iam/docs/creating-managing-service-accounts#iam-service-accounts-create-console)
-**Service account key**  | [**here**](https://cloud.google.com/iam/docs/creating-managing-service-account-keys)
 
 ### **Prepare the files structure**
 
-Make the directory to service account key:
+Make the directory to gcloud configs:
 ```bash
-mkdir -p ~/gcloud-docker/{conf,service_account}
+mkdir -p ~/.config/gcloud
 ```
-
-Create the file **config_default** in **~/gcloud-docker/conf**
-```bash
-cat > ~/gcloud-docker/conf/config_default <<EOF
-[auth]
-credential_file_override = /root/.config/<SERVICE ACCOUNT>.json
-EOF
-```
-
-Copy the service account key file json to directory:
-```bash
-cp -v <SERVICE ACCOUNT>.json ~/gcloud-docker/conf/
-```
-
-
-
-### **Install gcloud through Docker**
-With the requirements met, let's run our container:
+### **Run gcloud through Docker**
+With the requirements met, let's run our container to start our configuration:
 
 ```bash
 docker run -it --rm \
-  --volume ${PWD}/conf:/root/.config/gcloud/configurations \ 
-  --volume ${PWD}/service_account:/root/.config/ \
-  jorgegabriel/google-cloud:slim \
-  <GCLOUD PARAMETERS> --project <PROJECT-ID>
+  --volume ~/.config/gcloud:/root/.config/gcloud \
+  jorgegabriel/google-cloud:slim init
 ```
 
