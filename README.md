@@ -18,7 +18,8 @@ Table of contents
    * [Table of contents](#table-of-contents)
    * [Requirements](#requirements)
    * [To install requirements](#to-install-requirements)
-   * [Install gcloud through Docker](#install-gcloud-through-docker)
+   * [Prepare the files structure](#prepare-the-files-structure)
+   * [Run gcloud through Docker](#run-gcloud-through-docker)
 <!--te-->
 
 [//]: # "(## Feature)"
@@ -35,13 +36,13 @@ Requirement             | How to install
 **Docker**               | [**here**](https://docs.docker.com/engine/install/)
 **Google Cloud Account** | [**here**](https://cloud.google.com/apigee/docs/hybrid/v1.4/precog-gcpaccount)
 
-### **Prepare the files structure**
+## **Prepare the files structure**
 
 Make the directory to gcloud configs:
 ```bash
 mkdir -p ~/.config/gcloud
 ```
-### **Run gcloud through Docker**
+## **Run gcloud through Docker**
 With the requirements met, let's run our container to start our configuration:
 
 ```bash
