@@ -55,3 +55,11 @@ alias gctl="docker run -it --rm \
             --volume ${PWD}/.config/gcloud:/root/.config/gcloud \
             jorgegabriel/google-cloud:slim"
 ```
+
+Then, just execute:
+```bash
+gctl 
+```
+![img-gctl-output](gcloud-cheat-sheet/img/gctl-version.png)
+
+
