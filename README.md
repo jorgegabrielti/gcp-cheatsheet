@@ -5,6 +5,10 @@ About
 ==========
 This project aims to consolidate knowledge in Google Cloud Platform with a focus on cli tools. This is based in Docker.
 
+[![Badge](https://img.shields.io/badge/Requirements-Docker-blue)](https://docs.docker.com/engine/install)
+[![Badge](https://img.shields.io/badge/Requirements-Google%20Cloud%20Account-blue)](https://cloud.google.com/apigee/docs/hybrid/v1.4/precog-gcpaccount)
+
+
 [//]: # "[![Badge]()]()"
 
 Table of contents
@@ -22,14 +26,12 @@ Table of contents
 
 Requirements
 ==========
-- [x] **Git**
 - [x] **Docker**
 - [x] **Google Cloud Platform Account**
 ## **To install requirements**
 ---
 Requirement             | How to install
 -------------------------|----------------
-**Git**                  | [**here**](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 **Docker**               | [**here**](https://docs.docker.com/engine/install/)
 **Google Cloud Account** | [**here**](https://cloud.google.com/apigee/docs/hybrid/v1.4/precog-gcpaccount)
 
