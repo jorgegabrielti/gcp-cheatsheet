@@ -1,5 +1,5 @@
 # **Google Cloud Platform - CHEAT SHEET**
-[![Badge](https://img.shields.io/github/last-commit/jorgegabrielti/sre-rootsetup)](https://github.com/jorgegabrielti/gcp-cheatsheet)
+[![Badge](https://img.shields.io/github/last-commit/jorgegabrielti/gcp-cheatsheet)](https://github.com/jorgegabrielti/gcp-cheatsheet)
 
 About
 ==========
