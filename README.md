@@ -67,4 +67,8 @@ gctl
 ```
 ![img-gctl-output](gcloud-cheat-sheet/img/gctl-version.png)
 
-
+## Create a new configuration
+Now, just start a new configuration:
+```bash
+gctl init
+```
