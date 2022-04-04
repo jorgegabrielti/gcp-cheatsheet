@@ -1,14 +1,42 @@
-# Manage configurations
+# Manage multiples gcloud configurations
 
 ## Create a new configuration:
+
+List all configurations:
 ```bash
-gcloud config configurations create <CONFIGURATION NAME>
+gctl config configurations list
 ```
 
+### Create a new configuration
 ```bash
-gcloud config configurations list
-gcloud config configurations activate pythonrocks
-gcloud config set core/account pythonrocks@gmail.com
-gcloud projects list
-gcloud config set project mygcp-demo
+gctl config configurations create <CONFIGURATION NAME>
+```
+
+### To active a existent configuration
+```bash
+gcloud config configurations activate <CONFIGURATION NAME>
+```
+### To get the current project in configuration:
+```bash
+gctl config get project
+```
+
+### To list the projects:
+```bash
+gctl projects list
+```
+
+### To get the current compute/zone in configuration:
+```bash
+gcloud config get compute/zone
+```
+
+### To get the current **account** in configuration:
+```bash
+gctl config get account
+```
+
+### To list accounts:
+```bash
+gctl auth list
 ```
