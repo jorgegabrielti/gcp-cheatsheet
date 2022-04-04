@@ -1,8 +1,6 @@
 # Manage multiples gcloud configurations
 
-## Create a new configuration:
-
-List all configurations:
+### List all configurations:
 ```bash
 gctl config configurations list
 ```
