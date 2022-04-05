@@ -38,7 +38,7 @@ gctl config configurations rename <CONFIGURATION_NAME> --new-name=<NEW_NAME>
 >
 >ERROR: (gcloud.config.configurations.rename) Cannot rename configuration [default], it is the currently active configuration.
 
-## Project management
+## Projects management
 ---
 ```bash
 gctl projects <OPTION>
@@ -68,7 +68,6 @@ To get the current project in configuration:
 ```bash
 gctl config get project
 ```
-
 
 To get the current compute/zone in configuration:
 ```bash
