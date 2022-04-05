@@ -13,7 +13,7 @@ To active a existent configuration
 ```bash
 gcloud config configurations activate <CONFIGURATION NAME>
 ```
-## Projects
+## Project management
 ---
 ```bash
 gctl projects <OPTION>
