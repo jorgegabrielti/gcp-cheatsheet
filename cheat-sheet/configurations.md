@@ -30,7 +30,7 @@ gcloud config configurations activate <CONFIGURATION NAME>
 | set-iam-policy           | Set IAM policy for a project.
 | undelete                 | Undelete a project.
 | update                   | Update the name of a project.
-|----------------------------------------------------------------------------|
+
 
 To list the projects:
 ```bash
