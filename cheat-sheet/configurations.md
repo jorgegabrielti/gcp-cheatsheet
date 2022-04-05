@@ -27,13 +27,16 @@ To describe detail of the configuration:
 - project
 
 ```bash
-gctl config configurations describe <CONFIGURATION_NAME> --new-name=<NEW_NAME>
+gctl config configurations describe <CONFIGURATION_NAME> 
 ```
 
 To rename a configuration:
 ```bash
-gctl config configurations rename <CONFIGURATION_NAME>
+gctl config configurations rename <CONFIGURATION_NAME> --new-name=<NEW_NAME>
 ```
+>**[NOTE]**
+>
+>ERROR: (gcloud.config.configurations.rename) Cannot rename configuration [default], it is the currently active configuration.
 
 ## Project management
 ---
