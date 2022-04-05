@@ -18,7 +18,6 @@ gcloud config configurations activate <CONFIGURATION NAME>
 | Option                   | Description
 |--------------------------|-------------------------------------------------|
 | add-iam-policy-binding   | Add IAM policy binding for a project.
-| add-iam-policy-binding   | Add IAM policy binding for a project.
 | delete                   | Delete a project.
 | create                   | Create a new project.
 | describe                 | Show metadata for a project.
