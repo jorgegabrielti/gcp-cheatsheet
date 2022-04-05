@@ -65,7 +65,7 @@ Then, just execute:
 ```bash
 gctl 
 ```
-![img-gctl-output](gcloud-cheat-sheet/img/gctl-version.png)
+![img-gctl-output](cheat-sheet/img/gctl-version.png)
 
 ## Create a new configuration
 Now, just start a new configuration:
