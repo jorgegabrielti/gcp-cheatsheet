@@ -15,6 +15,9 @@ gcloud config configurations activate <CONFIGURATION NAME>
 ```
 ## Projects
 ---
+```bash
+gctl projects <OPTION>
+```
 | Option                   | Description
 |--------------------------|-------------------------------------------------|
 | add-iam-policy-binding   | Add IAM policy binding for a project.
