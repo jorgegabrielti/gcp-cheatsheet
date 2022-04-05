@@ -4,15 +4,37 @@ List all configurations:
 ```bash
 gctl config configurations list
 ```
-Create a new configuration
+Create a new configuration:
 ```bash
-gctl config configurations create <CONFIGURATION NAME>
+gctl config configurations create <CONFIGURATION_NAME>
 ```
 
-To active a existent configuration
+To active a existent configuration:
 ```bash
-gcloud config configurations activate <CONFIGURATION NAME>
+gcloud config configurations activate <CONFIGURATION_NAME>
 ```
+
+To delete a existent configuration:
+```bash
+gctl config configurations delete <CONFIGURATION_NAME>
+```
+
+To describe detail of the configuration:
+
+- name
+- zone
+- account
+- project
+
+```bash
+gctl config configurations describe <CONFIGURATION_NAME> --new-name=<NEW_NAME>
+```
+
+To rename a configuration:
+```bash
+gctl config configurations rename <CONFIGURATION_NAME>
+```
+
 ## Project management
 ---
 ```bash
@@ -45,12 +67,12 @@ gctl config get project
 ```
 
 
-### To get the current compute/zone in configuration:
+To get the current compute/zone in configuration:
 ```bash
 gcloud config get compute/zone
 ```
 
-### To get the current **account** in configuration:
+To get the current **account** in configuration:
 ```bash
 gctl config get account
 ```
