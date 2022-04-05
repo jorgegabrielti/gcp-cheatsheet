@@ -1,28 +1,47 @@
-# Manage multiples gcloud configurations
+## Configurations
 
-### List all configurations:
+List all configurations:
 ```bash
 gctl config configurations list
 ```
-
-### Create a new configuration
+Create a new configuration
 ```bash
 gctl config configurations create <CONFIGURATION NAME>
 ```
 
-### To active a existent configuration
+To active a existent configuration
 ```bash
 gcloud config configurations activate <CONFIGURATION NAME>
 ```
-### To get the current project in configuration:
+## Projects
+---
+| Option                   | Description
+|--------------------------|-------------------------------------------------|
+| add-iam-policy-binding   | Add IAM policy binding for a project.
+| add-iam-policy-binding   | Add IAM policy binding for a project.
+| delete                   | Delete a project.
+| create                   | Create a new project.
+| describe                 | Show metadata for a project.
+| get-ancestors            | Get the ancestors for a project.
+| get-ancestors-iam-policy | Get IAM policies for a project and its ancestors.
+| get-iam-policy           | Get IAM policy for a project.
+| list                     | List projects accessible by the active account.
+| remove-iam-policy-binding| Remove IAM policy binding for a project.
+| set-iam-policy           | Set IAM policy for a project.
+| undelete                 | Undelete a project.
+| update                   | Update the name of a project.
+|----------------------------------------------------------------------------|
+
+To list the projects:
+```bash
+gctl projects list
+```
+
+To get the current project in configuration:
 ```bash
 gctl config get project
 ```
 
-### To list the projects:
-```bash
-gctl projects list
-```
 
 ### To get the current compute/zone in configuration:
 ```bash
