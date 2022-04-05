@@ -1,5 +1,5 @@
 # **Google Cloud Platform - CHEAT SHEET**
-![gcp-logo](google-cloud/../gcloud-cheat-sheet/img/gcp-logo.png)
+![gcp-logo](google-cloud/../cheat-sheet/img/gcp-logo.png)
 
 [![Badge](https://img.shields.io/github/last-commit/jorgegabrielti/gcp-cheatsheet)](https://github.com/jorgegabrielti/gcp-cheatsheet)
 
