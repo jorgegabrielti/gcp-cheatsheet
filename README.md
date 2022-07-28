@@ -50,7 +50,7 @@ With the requirements met, let's run our container to start our configuration:
 ```bash
 docker run -it --rm \
   --volume ~/.config/gcloud:/root/.config/gcloud \
-  jorgegabriel/google-cloud:slim gclou init
+  jorgegabriel/google-cloud:slim gcloud init
 ```
 
 A tip to avoid the lengthy docker command is to create an alias in your **~/.bashrc**:
@@ -58,7 +58,7 @@ A tip to avoid the lengthy docker command is to create an alias in your **~/.bas
 # Google Cloud
 alias gctl="docker run -it --rm \
             --volume ${PWD}/.config/gcloud:/root/.config/gcloud \
-            jorgegabriel/google-cloud:slim"
+            jorgegabriel/google-cloud:slim gcloud"
 ```
 
 Then, just execute:
